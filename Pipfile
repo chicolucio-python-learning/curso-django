@@ -8,11 +8,13 @@ flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
+rope = "*"
 
 [packages]
 django = "*"
 gunicorn = "*"
 python-decouple = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"
