@@ -1,6 +1,9 @@
 # VScode
 .vscode/
 
+# Emacs
+.dir-locals.el
+
 # notes
 anotacoes.md
 
