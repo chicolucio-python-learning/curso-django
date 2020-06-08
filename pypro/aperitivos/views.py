@@ -9,8 +9,7 @@ class Video():
         self.vimeo_id = vimeo_id
 
     def get_absolute_url(self):
-        return reverse('aperitivos:video', args=(self.slug,))
-
+        return reverse('aperitivos:video', args=(self.slug, ))
 
 
 videos = [

@@ -18,8 +18,8 @@ def test_status_code(resp):
 def test_video_title(resp, titulo):
     assert_contains(resp, titulo)
 
-@pytest.mark.parametrize('slug',
-                         ['motivacao', 'instalacao-windows'])
+
+@pytest.mark.parametrize('slug', ['motivacao', 'instalacao-windows'])
 def test_link_title(resp, slug):
-    video_link = reverse('aperitivos:video', args=(slug,))
+    video_link = reverse('aperitivos:video', args=(slug, ))
     assert_contains(resp, f'href="{video_link}"')
