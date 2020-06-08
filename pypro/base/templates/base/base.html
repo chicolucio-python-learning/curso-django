@@ -36,31 +36,10 @@
     </nav>
 
     {% block body%}{% endblock body%}
-        
-    <footer class="main-footer mt-5 pt-4 text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Entre em contato</h3>
-                    <address>
-                        +55 21 999-666-334
-                        <br />
-                        <a href="mailo:chicolucio@whatever.com" class="text-light">chicolucio@whatever.com</a>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <div class="rights pb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        {% now "Y" %} Python Pro. Todos os direitos
-                        reservados.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    {% include 'base/footer.html' with contato_email='chicolucio@whatever.com' only %}
+    
+    
 </body>
 
 </html>
